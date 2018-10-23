@@ -15,7 +15,7 @@ export default class MyComponent extends Component {
 
   fetchData() {
     this.setState({ isPosting: true, error: null });
-    axios.get('/api/data').then(response => {
+    axios.get('/data').then(response => {
       this.setState({ data: response.data });
     }).catch(error => {
       this.setState({ error });
